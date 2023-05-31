@@ -15,6 +15,8 @@
 > >   operasyonu genellikle özel harekatlar yapıyor. Özel harekatlar, operatörlerdir. İşte orada sorumluluğu üstlenen, stratejik kararda olması gerekenleri yapanlar nasıl ki özel harekatlarsa, bizim de yazılımdaki özel harekatlarımız, operatörlerimiz olacak.
 > >
 > >   Örneğin ++ operatörünü kullanacağız, bizim yerimize 1 arttırıyor vs..
+>
+> 
 
 
 
@@ -31,6 +33,8 @@
 > *Operatörler kullanılırken geriye dönüş değerlerine dikkat edilmesi gerekmektedir.*
 >
 > <img src="https://imgur.com/A58PVcc.png" align=left>
+>
+> 
 
 
 
@@ -104,6 +108,8 @@
 > > ```
 > >
 > > <img src="https://imgur.com/FTgwBP7.png" align=left>
+>
+> 
 
 
 
@@ -124,6 +130,8 @@
 > Bu sebeple sonuç büyük olan türde elde edilecektir/edilmektedir.
 >
 > <img src="https://imgur.com/bL2cNLM.png" align=left>
+>
+> 
 
 
 
@@ -138,6 +146,8 @@
 > ```
 >
 > <img src="https://imgur.com/RmIijj5.png" align=left>
+>
+> 
 
 
 
@@ -154,6 +164,8 @@
 > <img src="https://imgur.com/OEpcJ0e.png" align=left>
 >
 > ***İstisnadır, mülakat sorusu olabilir***
+>
+> 
 
 
 
@@ -188,6 +200,8 @@
 > ```
 >
 > <img src="https://imgur.com/X6NQPCC.png" align=left>
+>
+> 
 
 
 
@@ -204,6 +218,8 @@
 > * ve(&&) operatörü, tüm şartların yerine getirilmiş olmasını ister.
 > * veya(||) operatörü, şartlardan en az bir tanesinin yerine getirilmiş olması yeterlidir.
 > * ya da (^) operatörü, şartlardan bir tanesinin kesinlikle bir tanesinin yerine getirilmesini ister.
+>
+> 
 
 
 
@@ -223,6 +239,8 @@
 > > ```
 > >
 > > Mantıksal operatörler geriye bool sonuç dönerler.
+>
+> 
 
 
 
@@ -264,6 +282,8 @@
 > <img src="https://imgur.com/Qj1L427.png" align=left>
 >
 > Sonuç olarak *True* çıkacaktır.
+>
+> 
 
 
 
@@ -321,6 +341,8 @@
 > > <img src="https://imgur.com/CVQVGsi.png" align=left>
 >
 > Birebir hepsi -- için de geçerlidir.
+>
+> 
 
 
 
@@ -381,6 +403,8 @@
 > Tür dönüşümlerinde herhangi bir değeri string'e dönüştürebilmek için .ToString fonksiyonu kullanıyorduk.
 >
 > Ayrıca ilgili türü string'e dönüştürebilmek için string bir ifade ile + operatörüne tabii tutulması yeterli olacaktır.
+>
+> 
 
 
 
@@ -395,6 +419,8 @@
 > a += b; //a = a + b; // Çıktı : ahmetmehmet
 > Console.WriteLine(a);
 > ```
+>
+> 
 
 ### '==' Operatörü
 
@@ -411,6 +437,8 @@
 > > bool sonuc = a == b;
 > > Console.WriteLine(sonuc);//Çıktı : False | Eğer ki hem a hem b aynı metinsel ifade olsaydı True olacaktı.
 > > ```
+>
+> 
 
 ### '!=' Operatörü
 
@@ -427,6 +455,8 @@
 > > bool sonuc = a != b; //Eşit değilmi sorusu sorulur. Haliyle eşit değil ve True sonucu döner.
 > > Console.WriteLine(sonuc); // Çıktı : True
 > > ```
+>
+> 
 
 
 
@@ -463,6 +493,8 @@
 > > ```
 >
 > 3.Kullanım : Null References (C# 8.0) ileride göreceğiz..
+>
+> 
 
 
 
@@ -482,6 +514,8 @@
 > > string mesaj = medeniHal == true ? "Evlilere kampanya.." : "Bekarlara kampanya..";
 > > Console.WriteLine(mesaj);
 > > ```
+>
+> 
 
 
 
@@ -496,6 +530,8 @@
 > char sonuc = yas < 25 ? 'A' : (yas == 25 ? 'B' : 'C');
 > Console.WriteLine(sonuc);
 > ```
+>
+> 
 
 
 
@@ -572,6 +608,8 @@
 > Değişkeni operatörün sağında çağırıyorsak değeri, solunda çağırıyorsak kendisi gelecektir.
 >
 > İleride yani referans türlü değişkenlerde atama operatörünün sorumluluğunu değişip referans etme operatörü olduğunu konuşacağız.
+>
+> 
 
 
 
@@ -587,6 +625,8 @@
 > ```
 >
 > <img src= "https://imgur.com/17I8Gxb.png" align=left>
+>
+> 
 
 
 
@@ -618,6 +658,8 @@
 > Genellikle tür dönüşümlerinde kullanılan bir operatördür.
 >
 > *İleride polimorifzm durumunda base class referansıyla işaretlenen bir nesneyi kendi türünde de elde edebilmemizi sağlamaktadır.*
+>
+> 
 
 
 
@@ -648,6 +690,8 @@
 > ```
 >
 > *İleride (ileri düzey programlama) reflection dediğimiz bir konuda elimizdeki bir türün reflectionına girmek için kullanıldığını göreceğiz.*
+>
+> 
 
 
 
@@ -691,6 +735,8 @@
 > *İleride if yapılanmasında vs. çok tercih ettiğimiz bir operatör olacaktır.*
 >
 > *OOP yapılanmasında polimorfizm is operatörüyle kalıtımsal durumlardaki nesnelerin türlerinide öğrenebileceğiz.*
+>
+> 
 
 
 
@@ -717,6 +763,8 @@
 > > int b = 123;
 > > Console.WriteLine (b is null); //Compiler hata verecektir.
 > > ```
+>
+> 
 
 
 
@@ -732,6 +780,8 @@
 > ```
 >
 > *is not null operatörünü sadece null olabilen türlerde kullanabilmekteyiz.*
+>
+> 
 
 
 
@@ -770,6 +820,8 @@
 > > 
 >
 > *Genellikle OOP'de kullanılan bir operatördür.*
+>
+> 
 
 
 
@@ -805,6 +857,8 @@
 > > object x = 123;
 > > int? y = x as int?; // bu şekilde kullanılabilmektedir.
 > > ```
+>
+> 
 
 
 
@@ -822,6 +876,8 @@
 > Console.WriteLine(b == null ? "Dünya" : b); // ?: veya if operatörleri ile bu işlemi gerçekleştirmek yerine bu operatör vardır.
 > Console.WriteLine(b ?? 3); // Compiler hata verecektir. Sağdaki ve soldaki değerler aynı türde olmalıdır!
 > ```
+>
+> 
 
 
 
@@ -843,4 +899,6 @@
 > > int? id = null; //null yerine dışarıdan değer geldiğini varsayalım.
 > > id ??= 1; //id null ise 1 değerini ata, değilse değerini koru...
 > > ```
+>
+> 
 

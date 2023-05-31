@@ -27,7 +27,8 @@
 >Yani yazılımın RAM'de çalışabilmesi, RAM'e değer koyabilmesi, RAM'deki bir değeri elde edebilmesi için değişkene ihtiyaç duymaktayız.
 
 **Özetlemek gerekirse;**
-<br>Yazılımda işlenecek veriyi yazılım adına RAM'e yerleştirebilmek için biz programcılar değişkenleri kullanırız.
+
+Yazılımda işlenecek veriyi yazılım adına RAM'e yerleştirebilmek için biz programcılar değişkenleri kullanırız.
 
 
 ## Value Type | Primitive Type | Değer Türlü Değişkenler
@@ -53,17 +54,22 @@ string metin1 = "Test";
 >Bir değişkenle RAM'de alan tahsisinde bulunduğumuzda buna **değer türlü değişken** diyoruz. Yani tuttuğu değer bir normal değer olan değişkenlere Değer Türlü denmektedir.
 
 **Value Type (Değer Türlü) değişkenler;**
-<br>Sade ve sadece bir değeri tutan değişkenlerdir. Yani adımız, soyadımız, doğum tarihimiz gibi değerleri tutarlar.
+
+Sade ve sadece bir değeri tutan değişkenlerdir. Yani adımız, soyadımız, doğum tarihimiz gibi değerleri tutarlar.
 
 **Primitive Typle (En ilkel türdür)**
-<br>Türetilmemiş veri, sade, ham veriyi tutar.
-<br>Örnek vermek gerekirse, byte: bir primitive türdür. Lakin byte'lardan meydana gelmiş olan decimal türü ise primitive değildir. Lakin Value Type'dır.
-<br>Yani Value Type'lar Primitive Type'ları da kapsarlar.
+
+Türetilmemiş veri, sade, ham veriyi tutar.
+
+Örnek vermek gerekirse, byte: bir primitive türdür. Lakin byte'lardan meydana gelmiş olan decimal türü ise primitive değildir. Lakin Value Type'dır.
+
+Yani Value Type'lar Primitive Type'ları da kapsarlar.
 
 <img src="https://imgur.com/J6iTFtG.png" width=240 align=left>
 
 >Değişken tanımlarken RAM'e tutulacak veriye uygun bir alan tahsisinde bulunulması gerekmektedir. RAM'de alan tahsisinde bulunabilmek için ilgili değişkenin türünden hareket edilir.
-<br>Bir türde tanımlanmış alana farklı bir türde değer atayamayız.
+>
+>Bir türde tanımlanmış alana farklı bir türde değer atayamayız.
 
 ### Hangi türlerle bu bildirimde bulunuyoruz?
 
@@ -151,9 +157,9 @@ int sayi;
 >>Bunlardan birisi Stack ve diğeri Heap
 
 **Stack** : İçerisinde değişkenleri, değişken adlarını ve değerlerini tutabildiğimiz bölümdür.
-<br>örn.
-<br>x=5
-<br>y="Ahmet"
+örn.
+x=5
+y="Ahmet"
 
 **Heap** : Nesneleri tutabildiğimiz bölümdür (Object Orianted Konusu)
 
@@ -921,7 +927,7 @@ object _yas = 28; // Boxing
 >   ```csharp
 >   int a = 5;
 >   object b = a;
->       
+>         
 >   (int)b; //-> Cast operatörü b değişkeni/objesi içerisindeki değeri bana int olarak ver demektedir.
 >   ```
 >
@@ -966,7 +972,7 @@ Console.WriteLine(yas * 5);
 >   ```csharp
 >   //Tutulacak değerin türüne uygun bir değişken tanımlayabilmek için kullanılan keyworddür.
 >   var medeniHal = true; // Boolean olduğundan dolayı var, bool türüne bürünecektir.
->       
+>         
 >   //var keyword'ü, compiler tarafından değerin türüne göre otomatik olarak büründürülen bir keyworddür. Lakin bir tür DEĞİLDİR!
 >   ```
 >
@@ -990,7 +996,7 @@ Console.WriteLine(yas * 5);
 >    ```csharp
 >    var x = 5; //operasyonel bir keyworddür.
 >    object y = 15; //object bir türdür.
->          
+>             
 >    //var atanan değerin türüne bürünürken, object atanan değeri Boxing yaparak object'e dönüştürür.
 >    ```
 >
@@ -1031,7 +1037,7 @@ development aşamasında a'nın hala dynamic olduğu gözlemlenecektir.
 >   Console.WriteLine(x.GetType());
 >   x = 3.14D;
 >   Console.WriteLine(x.GetType());
->       
+>         
 >   /*
 >   Çıktı:
 >   System.String

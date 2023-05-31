@@ -24,6 +24,10 @@
 >
 > Genel olarak sol tarafta bir (tür,değişken,referans..) karşılayıcı birşey olacak, sağ tarafta ise işlem yapıp değer döndüren bir kod olacak;
 > ya da sağ tarafta kodumuz herhangi bir işlem yapacak ama bir değer döndürmeyecekse olduğu gibi bırakacağız, herhangi bir yere assign etmeyeceğiz.
+>
+> 
+
+
 
 ## Noktalı virgül ';' Operatörü
 
@@ -45,6 +49,10 @@
 >   ```
 >
 >   Daha temiz bir kod görüntüsü olması açısından 1 kere kullanmak daha faydalı olacaktır.
+>   
+>   
+
+
 
 ## Satır Satır Kod Mantığı Yoktur!
 
@@ -53,14 +61,14 @@
 > ```csharp
 > namespace LineToLine
 > {
->     class Program
->     {
->         static void Main(string[] args)
->         {
->             int a = 5;
+>  class Program
+>  {
+>      static void Main(string[] args)
+>      {
+>          int a = 5;
 > 			string b = "Mustafa";
->         }
->     }
+>      }
+>  }
 > }
 > ```
 >
@@ -116,4 +124,5 @@
 > }
 > ```
 >
+> 
 

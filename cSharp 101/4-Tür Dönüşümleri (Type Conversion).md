@@ -51,6 +51,8 @@
 > > Tür dönüşümlerinde dikkat edilmesi gereken tek bir husus vardır ki, o da; 
 > >
 > > *dönüşüm yapılacak verinin türüne uygun bir hedef tür belirlenmelidir.*
+>
+> 
 
 ### Parse Metodu
 
@@ -104,6 +106,10 @@
 > > ```
 > >
 > > char birden fazla karakter tutamayacağı için hata verecektir.
+>
+> 
+
+
 
 ### Convert Fonksiyonu
 
@@ -140,7 +146,10 @@
 > > //Çıktı : 3,14
 > > ```
 > >
-> > 
+>
+> 
+
+
 
 ## Diğer İfadelerin Metinsel İfadelere Dönüştürülmesi
 
@@ -153,7 +162,10 @@
 > > string a2 = Contert.ToString(a);
 > > ```
 > >
-> > 
+>
+> 
+
+
 
 ### ToString Fonksiyonu
 
@@ -167,7 +179,10 @@
 > > string f2 = f.ToString();
 > > ```
 > >
-> > 
+>
+> 
+
+
 
 ## Sayısal İfadelerin Kendi Aralarında Tür Dönüşümü
 
@@ -192,6 +207,10 @@
 > > Ancak ushort,byte,sbyte türlerine dönüştürmek istersek yazılım bize, "buna ben müsade etmem, sen kendi iradenle yapacaksın, senin sorumluluğunda" der. Bu noktada biz bilinçli olarak tür dönüşümünü gerçekleştiririz.
 >
 > > Bir sayısal türün alt türüne bir veriyi dönüştürdüğümüzde eğer ki veri o **alt türün değer aralığına girmiyorsa veri kaybı söz konusu olacaktır!**
+>
+> 
+
+
 
 ### Bilinçsiz Tür Dönüşümü
 
@@ -201,6 +220,8 @@
 > int a = 3000;
 > float f = a; //Şuanda burada bir tür dönüşümü söz konusudur. Lakin buradaki tür dönüşümü bizim kararımızla/bilincimizle yaptığımız bir dönüşüm değildir. Compiler buradaki sorumluluğu üstlenecektir.
 > ```
+
+
 
 ### Bilinçli Tür Dönüşümü
 
@@ -234,7 +255,8 @@
 > //Çıktı: 96 //0 ile 256 arasında değer alan byte
 > ```
 >
-> 
+
+
 
 ### Kritik
 
@@ -248,6 +270,8 @@
 > > Burada elimizdeki a değişkenine cast operatörü ile int'ten byte türüne bilinçli bir dönüşüm yapılmıştır. `(byte)a`
 > >
 > >  `(byte)a ` artık byte türünde olacağı için short'a atanırken de bilinçsiz tür dönüşümü gerçekleşecektir.
+>
+> 
 
 ### checked
 
@@ -279,7 +303,8 @@
 > }
 > ```
 >
-> 
+
+
 
 ## bool Türünün Sayısal Türe Dönüştürülmesi
 
@@ -294,6 +319,8 @@
 > ```
 >
 > Sayısal türden kastımız sadece integer değildir, herhangi bir sayısal türe dönüştürülebilir.
+>
+> 
 
 
 
@@ -311,7 +338,8 @@
 > Console.WriteLine(b);
 > ```
 >
-> 
+
+
 
 ## char Türünün Sayısal Türe Dönüştürülmesi
 
@@ -332,6 +360,10 @@ Yani anlayacağınız klavye üzerindeki bütün tuş kombinasyonlarının esas�
 > **Cast Operatörü** : Unboxing, bilinçli tür dönüşümü ve burada da kullanıyoruz. Yani bir operatör yeri ve konumuna göre farklı sorumluluklar üstlenebiliyor.
 >
 > *Tüm tamsayı değerleri üzerinde bu işlemi gerçekleştirebilmekteyiz.*
+>
+> 
+
+
 
 ## Sayısal Türlerin char Türüne Dönüştürülmesi
 
